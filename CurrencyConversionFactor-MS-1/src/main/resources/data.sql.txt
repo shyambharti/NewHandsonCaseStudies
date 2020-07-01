@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS currencyconversion;
+CREATE TABLE currencyconversion(ID INT AUTO_INCREMENT PRIMARY KEY,countryfrom VARCHAR(25) NOT NULL,countryto VARCHAR(25) NOT NULL,currencyFactor Decimal(30,2) NOT NULL);
+INSERT INTO currencyconversion(countryfrom,countryto,currencyfactor) VALUES
+('USD','INR',75.00),
+('EUR','INR',71.00),
+('AUS','INR',48.00),
+('SGD','INR',53.00);
